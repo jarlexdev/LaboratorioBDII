@@ -5,7 +5,7 @@
 	Parametro de entrada: Un texto (NVARCHAR).
 	Salida: El texto convertido en minusculas (NVARCHAR).
 **/
-CREATE OR ALTER FUNCTION dbo.funcionConvertirTextoMayuscula(
+CREATE OR ALTER FUNCTION dbo.funcionConvertirTextoMinuscula(
 	@nombresEmpleado NVARCHAR(100)
 )
 RETURNS NVARCHAR(100)
@@ -16,5 +16,5 @@ AS
 		RETURN @nombresMayus
 	END
 GO
-SELECT dbo.funcionConvertirTextoMayuscula('Laura') AS Nombre_Minuscula
+SELECT dbo.funcionConvertirTextoMinuscula('Laura') AS Nombre_Minuscula
 GO
